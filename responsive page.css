@@ -1,0 +1,246 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #222;
+    color: #fff;
+}
+
+.main {
+    width: 100%;
+    background: url(1.jpg);
+    background-position: center;
+    background-size: cover;
+    min-height: 100vh;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 30px;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.icon {
+    flex: 1;
+}
+
+.logo {
+    color: #0e3b0e; /* Changed to green */
+    font-size: 35px;
+}
+
+.menu {
+    flex: 3;
+    text-align: center;
+}
+
+ul {
+    list-style-type: none;
+}
+
+ul li {
+    display: inline-block;
+    margin-left: 30px;
+}
+
+ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+ul li a:hover {
+    color: #084c17;
+}
+
+.search {
+    flex: 2;
+    text-align: right;
+}
+
+.srch {
+    width: 180px;
+    padding: 8px;
+    border: none;
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.2);
+    color: #fff;
+}
+
+.btn {
+    background-color: #0b5211;
+    color: #fff;
+    border: none;
+    padding: 8px 15px;
+    cursor: pointer;
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.btn:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+/* Content styles */
+.content {
+    text-align: center;
+    padding: 50px;
+}
+
+.content h1 {
+    font-size: 40px;
+    margin-bottom: 20px;
+    line-height: 1.5;
+}
+
+.content span {
+    color: #0a5411;
+}
+
+.par {
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+.cn {
+    background-color: #095721;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.cn:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+.form {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px;
+    margin: auto;
+    margin-top: 30px;
+    text-align: left;
+}
+
+.form h2 {
+    text-align: center;
+    font-size: 24px;
+    color: #0a5b21;
+    margin-bottom: 20px;
+}
+
+.form input {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin: 10px 0;
+    background-color: rgba(255, 255, 255, 0.2);
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+}
+
+.btnn {
+    background-color: #06561e;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 20px;
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+
+.btnn:hover {
+    background-color: #fff;
+    color: #07521d;
+}
+
+.link {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.link a {
+    color: #0a511b;
+    text-decoration: none;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 1024px) {
+    .menu {
+        display: none;
+    }
+    .search {
+        flex: 2;
+        text-align: right;
+        margin-top: 10px; /* Adjust margin as needed */
+    }
+    
+    .srch {
+        width: 180px;
+        padding: 8px;
+        border: none;
+        border-bottom-left-radius: 5px;
+        border-top-left-radius: 5px;
+        background-color: rgba(255, 255, 255, 0.2);
+        color: #fff;
+        font-size: 14px; /* Adjust font size for smaller screens */
+    }
+    
+    .btn {
+        background-color: #0a501e;
+        color: #fff;
+        border: none;
+        padding: 8px 15px;
+        cursor: pointer;
+        border-bottom-right-radius: 5px;
+        border-top-right-radius: 5px;
+        font-size: 14px; /* Adjust font size for smaller screens */
+    }
+}
+
+@media screen and (max-width: 830px) {
+    .search {
+        text-align: center;
+    }
+
+    .srch {
+        width: 100%;
+        margin-right: 0;
+        border-radius: 5px;
+    }
+
+    .btn {
+        width: 100%;
+        margin-top: 10px; /* Adjust margin as needed */
+        border-radius: 5px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .content {
+        padding: 30px;
+    }
+    .form {
+        width: 90%;
+    }
+}
